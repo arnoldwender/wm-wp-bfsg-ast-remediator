@@ -1,0 +1,418 @@
+# Translation of wm-bfsg-ast-remediator in mt_MT
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-bfsg-ast-remediator 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-bfsg-ast-"
+"remediator\n"
+"POT-Creation-Date: 2026-11-21T12:52:58+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:52+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language: mt_MT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==0 || (n%100>1 && n%100<11) ? "
+"1 : (n%100>10 && n%100<20 ) ? 2 : 3);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-bfsg-ast-remediator\n"
+
+#. Plugin Name of the plugin
+#: wm-bfsg-ast-remediator.php includes/Admin/AdminDashboard.php:120
+#: includes/Admin/AdminDashboard.php:248
+msgid "WM BFSG AST Remediator"
+msgstr "WM BFSG AST Remediator"
+
+#. Plugin URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+
+#. Description of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln: lang-Attribut, Sprunglink zum Hauptbereich, alt-Attribut für Bilder, "
+"aria-label für unbeschriftete Formularfelder, Namen für mehrere "
+"Navigationen. Prüft keine Barrierefreiheit und macht keine Seite BFSG-"
+"konform."
+msgstr ""
+"Jikteb mill-ġdid l-HTML ta' kull paġna frontend qabel ma tintbagħat b'ħames "
+"regoli fissi: attribut lang, link ta' qbiż għaż-żona prinċipali, attribut "
+"alt fuq l-istampi, aria-label fuq oqsma tal-formoli bla tikketta u ismijiet "
+"għal diversi navigazzjonijiet. Ma jivverifikax l-aċċessibbiltà u ma jagħmilx "
+"is-sit konformi mal-BFSG."
+
+#. Author of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:77
+msgid "Sprache des Dokuments"
+msgstr "Lingwa tad-dokument"
+
+#: includes/Admin/AdminDashboard.php:78
+msgid ""
+"Setzt lang am <html>-Element aus der Spracheinstellung von WordPress, wenn "
+"es fehlt oder leer ist. Läuft immer."
+msgstr ""
+"Jissettja lang fuq l-element <html> mil-lingwa ta' WordPress meta jkun "
+"nieqes jew vojt. Jaħdem dejjem."
+
+#: includes/Admin/AdminDashboard.php:81
+msgid "Sprunglink zum Hauptbereich"
+msgstr "Link ta' qbiż għall-kontenut prinċipali"
+
+#: includes/Admin/AdminDashboard.php:82
+msgid ""
+"Wenn die Seite ein <main> (oder role=\"main\") und keinen eigenen Sprunglink "
+"hat: fügt am Anfang von <body> „Zum Inhalt springen“ ein, das erst bei Fokus "
+"sichtbar wird und auf die id des Hauptbereichs zeigt (fehlt sie, wird main-"
+"content gesetzt)."
+msgstr ""
+"Meta l-paġna jkollha <main> (jew role=\"main\") u l-ebda link ta' qbiż "
+"tagħha: idaħħal fil-bidu ta' <body> „Zum Inhalt springen“, viżibbli mal-"
+"fokus u jipponta lejn l-id taż-żona prinċipali (jissettja main-content jekk "
+"nieqes)."
+
+#: includes/Admin/AdminDashboard.php:85
+msgid "alt-Attribut für Bilder"
+msgstr "Attribut alt għall-istampi"
+
+#: includes/Admin/AdminDashboard.php:86
+msgid ""
+"Gibt jedem img-Element ohne alt ein alt: leer, wenn der Dateipfad icon oder "
+"decor enthält, sonst den Dateinamen ohne Endung. Ein Dateiname ist keine "
+"Bildbeschreibung."
+msgstr ""
+"Jagħti lil kull img-Element mingħajr alt attribut alt: vojt jekk il-mogħdija "
+"fiha icon jew decor, inkella l-isem tal-fajl mingħajr estensjoni. Isem ta' "
+"fajl mhuwiex deskrizzjoni ta' stampa."
+
+#: includes/Admin/AdminDashboard.php:89
+msgid "aria-label für unbeschriftete Formularfelder"
+msgstr "aria-label għal oqsma tal-formola bla tikketta"
+
+#: includes/Admin/AdminDashboard.php:90
+msgid ""
+"Feldern ohne label, aria-label, aria-labelledby oder title gibt es aria-"
+"label aus placeholder, sonst aus name, sonst „Eingabefeld“. Felder innerhalb "
+"eines <label> bleiben unverändert."
+msgstr ""
+"Oqsma mingħajr label, aria-label, aria-labelledby jew title jingħataw aria-"
+"label minn placeholder, inkella minn name, inkella „Eingabefeld“. Oqsma "
+"ġewwa <label> jibqgħu kif inhuma."
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Namen für mehrere Navigationen"
+msgstr "Ismijiet għal diversi navigazzjonijiet"
+
+#: includes/Admin/AdminDashboard.php:94
+msgid ""
+"Bei mehr als einem <nav> ohne Namen: aria-label nach der CSS-Klasse "
+"(Hauptnavigation, Fußzeilennavigation, Mobilmenü) oder „Navigation 1, 2 …“."
+msgstr ""
+"Meta jkun hemm aktar minn <nav> wieħed bla isem: iżid aria-label skont il-"
+"klassi CSS (Hauptnavigation, Fußzeilennavigation, Mobilmenü) jew „Navigation "
+"1, 2 …“."
+
+#: includes/Admin/AdminDashboard.php:138
+msgid "Regeln laufen nicht: PHP-Erweiterung dom oder mbstring fehlt"
+msgstr ""
+"Ir-regoli mhux qed jaħdmu: l-estensjoni PHP dom jew mbstring hija nieqsa"
+
+#: includes/Admin/AdminDashboard.php:140
+msgid "Regeln ändern das HTML der Frontend-Seiten"
+msgstr "Ir-regoli jibdlu l-HTML tal-paġni frontend"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "Ausgeschaltet: das Frontend bleibt unverändert"
+msgstr "Mitfi: il-frontend jibqa' mingħajr tibdil"
+
+#: includes/Admin/AdminDashboard.php:152
+msgid "Regeln eingeschaltet"
+msgstr "Regoli mixgħula"
+
+#: includes/Admin/AdminDashboard.php:158
+msgid "Einstellungen und Simulator"
+msgstr "Settings u simulatur"
+
+#: includes/Admin/AdminDashboard.php:177
+msgid "WM BFSG Remediator"
+msgstr "WM BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:178
+msgid "BFSG Remediator"
+msgstr "BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:239
+msgid "Übersicht"
+msgstr "Ħarsa ġenerali"
+
+#: includes/Admin/AdminDashboard.php:240 includes/Admin/AdminDashboard.php:310
+msgid "Simulator"
+msgstr "Simulatur"
+
+#: includes/Admin/AdminDashboard.php:241 includes/Admin/AdminDashboard.php:370
+msgid "Regeln"
+msgstr "Regoli"
+
+#: includes/Admin/AdminDashboard.php:242
+msgid "Was es nicht tut"
+msgstr "X'ma jagħmilx"
+
+#: includes/Admin/AdminDashboard.php:249
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln. Es prüft nicht, ob eine Seite barrierefrei ist, und macht keine "
+"Website BFSG-konform."
+msgstr ""
+"Jibdel l-HTML ta' kull paġna frontend qabel il-konsenja b'ħames regoli "
+"fissi. Ma jiċċekkjax jekk paġna hijiex aċċessibbli u ma jagħmel l-ebda sit "
+"konformi mal-BFSG."
+
+#: includes/Admin/AdminDashboard.php:252
+msgid "Part of the WM Suite plugin family"
+msgstr "Parti mill-familja ta' plugins WM Suite"
+
+#: includes/Admin/AdminDashboard.php:254
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Standalone"
+msgstr "Awtonomu"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Eingeschaltet"
+msgstr "Mixgħul"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Läuft nicht"
+msgstr "Mhux jaħdem"
+
+#: includes/Admin/AdminDashboard.php:265
+msgid "Einstellungen gespeichert. Sie gelten ab dem nächsten Seitenaufruf."
+msgstr ""
+"Is-settings ġew salvati. Jidħlu fis-seħħ mat-tagħbija li jmiss tal-paġna."
+
+#: includes/Admin/AdminDashboard.php:268
+msgid "Bereiche"
+msgstr "Taqsimiet"
+
+#: includes/Admin/AdminDashboard.php:276
+msgid "Was gerade läuft"
+msgstr "X'qed jaħdem bħalissa"
+
+#: includes/Admin/AdminDashboard.php:277
+msgid ""
+"Gelesen aus den gespeicherten Einstellungen beim Aufruf dieser Seite. Das "
+"Plugin führt keine Statistik darüber, wie oft eine Regel etwas geändert hat."
+msgstr ""
+"Moqri mis-settings salvati mal-ftuħ ta' din il-paġna. Il-plugin ma jżomm l-"
+"ebda statistika dwar kemm-il darba regola bidlet xi ħaġa."
+
+#: includes/Admin/AdminDashboard.php:281
+msgid "Baustein"
+msgstr "Komponent"
+
+#: includes/Admin/AdminDashboard.php:282
+msgid "Zustand"
+msgstr "Stat"
+
+#: includes/Admin/AdminDashboard.php:283
+msgid "Was er tut"
+msgstr "X'jagħmel"
+
+#: includes/Admin/AdminDashboard.php:288
+msgid "Engine"
+msgstr "Magna"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "an"
+msgstr "mixgħul"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "aus"
+msgstr "mitfi"
+
+#: includes/Admin/AdminDashboard.php:290
+msgid ""
+"Puffert die Ausgabe jeder Frontend-Seite (nicht Admin, AJAX, Cron, REST) ab "
+"template_redirect und wendet die eingeschalteten Regeln auf Dokumente mit "
+"<html> an."
+msgstr ""
+"Jiġbor fil-buffer l-output ta' kull paġna frontend (mhux admin, AJAX, cron "
+"jew REST) f'template_redirect u japplika r-regoli mixgħula fuq dokumenti "
+"b'<html>."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "PHP dom und mbstring"
+msgstr "PHP dom u mbstring"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "vorhanden"
+msgstr "preżenti"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "fehlt"
+msgstr "nieqsa"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid ""
+"Ohne diese Erweiterungen laufen die Regeln nicht und die Seiten bleiben "
+"unverändert."
+msgstr ""
+"Mingħajr dawn l-estensjonijiet ir-regoli ma jaħdmux u l-paġni jibqgħu kif "
+"inhuma."
+
+#: includes/Admin/AdminDashboard.php:311
+msgid ""
+"Führt dieselbe Engine mit denselben gespeicherten Regeln aus wie das "
+"Frontend. Nur vollständige Dokumente mit <html> werden verarbeitet."
+msgstr ""
+"Iħaddem eżatt l-istess magna bl-istess regoli salvati bħall-frontend. "
+"Dokumenti sħaħ b'<html> biss jiġu pproċessati."
+
+#: includes/Admin/AdminDashboard.php:314
+msgid "HTML-Dokument"
+msgstr "Dokument HTML"
+
+#: includes/Admin/AdminDashboard.php:316
+msgid "Regeln anwenden"
+msgstr "Applika r-regoli"
+
+#: includes/Admin/AdminDashboard.php:319
+msgid "Ergebnis"
+msgstr "Riżultat"
+
+#: includes/Admin/AdminDashboard.php:334
+msgid "Wird verarbeitet …"
+msgstr "Qed jiġi pproċessat …"
+
+#: includes/Admin/AdminDashboard.php:345
+msgid "Die Anfrage ist fehlgeschlagen."
+msgstr "It-talba falliet."
+
+#: includes/Admin/AdminDashboard.php:350
+msgid "Regeln haben das Dokument geändert:"
+msgstr "regoli bidlu d-dokument:"
+
+#: includes/Admin/AdminDashboard.php:351
+msgid ""
+"Keine aktive Regel hat etwas geändert. Das ist keine Aussage über die "
+"Barrierefreiheit."
+msgstr ""
+"L-ebda regola attiva ma bidlet xejn. Din mhijiex dikjarazzjoni dwar l-"
+"aċċessibbiltà."
+
+#: includes/Admin/AdminDashboard.php:361
+msgid "Verbindungsfehler."
+msgstr "Żball fil-konnessjoni."
+
+#: includes/Admin/AdminDashboard.php:377
+msgid "Engine einschalten"
+msgstr "Ixgħel il-magna"
+
+#: includes/Admin/AdminDashboard.php:379
+msgid ""
+"Aus: keine Frontend-Seite wird verändert. Die Sprache des Dokuments hat "
+"keinen eigenen Schalter und läuft, solange die Engine an ist."
+msgstr ""
+"Mitfi: l-ebda paġna frontend ma tinbidel. Il-lingwa tad-dokument m'għandhiex "
+"swiċċ separat u taħdem sakemm il-magna tkun mixgħula."
+
+#: includes/Admin/AdminDashboard.php:395
+msgid "Einstellungen beim Deinstallieren löschen"
+msgstr "Ħassar is-settings waqt id-diżinstallazzjoni"
+
+#: includes/Admin/AdminDashboard.php:397
+msgid ""
+"Standardmäßig bleiben alle gespeicherten Optionen bei der Deinstallation "
+"erhalten. Nur wenn dieses Kontrollkästchen aktiviert ist, entfernt "
+"uninstall.php sämtliche Optionen des Plugins."
+msgstr ""
+"B'mod awtomatiku l-għażliet salvati kollha jinżammu waqt id-"
+"diżinstallazzjoni. Biss meta din il-kaxxa tkun immarkata, uninstall.php "
+"ineħħi l-għażliet kollha tal-plugin."
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Einstellungen speichern"
+msgstr "Salva s-settings"
+
+#: includes/Admin/AdminDashboard.php:406
+msgid "Was das Plugin nicht tut"
+msgstr "X'ma jagħmilx il-plugin"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid ""
+"Es prüft keine Seite auf Barrierefreiheit und erstellt keinen Bericht; ob "
+"eine Website BFSG, BITV 2.0 oder WCAG genügt, beantwortet es nicht."
+msgstr ""
+"Ma jiċċekkja l-aċċessibbiltà ta' l-ebda paġna u ma joħloq l-ebda rapport; ma "
+"jweġibx jekk sit jissodisfax BFSG, BITV 2.0 jew WCAG."
+
+#: includes/Admin/AdminDashboard.php:409
+msgid ""
+"Kontraste, Überschriftenhierarchie, Tastaturbedienung, Fokus, Schaltflächen- "
+"und Linktexte, Videos, PDFs und Inhalte, die per JavaScript nachgeladen "
+"werden, bleiben unberührt."
+msgstr ""
+"Il-kuntrasti, il-ġerarkija tat-titoli, l-użu tat-tastiera, il-fokus, it-"
+"testi tal-buttuni u tal-links, il-vidjows, il-PDFs u l-kontenut imniżżel bil-"
+"JavaScript jibqgħu mhux mimsusa."
+
+#: includes/Admin/AdminDashboard.php:410
+msgid ""
+"Ein aus dem Dateinamen gebildeter alt-Text („IMG 2034“) und ein aria-label "
+"aus name oder placeholder sind Notbehelfe, keine Beschreibungen. Die "
+"eigentliche Korrektur gehört in Theme und Inhalt."
+msgstr ""
+"Test alt maħluq mill-isem tal-fajl („IMG 2034“) u aria-label minn name jew "
+"placeholder huma soluzzjonijiet temporanji, mhux deskrizzjonijiet. Il-"
+"korrezzjoni vera tappartjeni lit-tema u lill-kontenut."
+
+#: includes/Admin/AdminDashboard.php:411
+msgid ""
+"Die Änderungen existieren nur im ausgelieferten HTML: Editor, Datenbank und "
+"Theme-Dateien bleiben wie sie sind, und Seiten aus einem Seiten-Cache "
+"bekommen sie nur, wenn der Cache nach dem Plugin gebaut wurde."
+msgstr ""
+"Il-bidliet jeżistu biss fl-HTML mibgħut: l-editur, id-database u l-fajls tat-"
+"tema jibqgħu kif inhuma, u l-paġni mill-cache jirċevuhom biss jekk il-cache "
+"nbniet wara l-plugin."
+
+#: wm-bfsg-ast-remediator.php:99
+msgid "HTML-Regeln inaktiv (PHP dom oder mbstring fehlt)"
+msgstr "Regoli HTML inattivi (PHP dom jew mbstring nieqsa)"
+
+#: wm-bfsg-ast-remediator.php:102
+msgid "HTML-Regeln ausgeschaltet"
+msgstr "Regoli HTML mitfija"
+
+#. translators: %1$d: number of enabled rules, %2$d: total number of rules
+#: wm-bfsg-ast-remediator.php:105
+#, php-format
+msgid "HTML-Regeln aktiv (%1$d/%2$d Regeln eingeschaltet)"
+msgstr "Regoli HTML attivi (%1$d/%2$d regoli mixgħula)"
+
+#: wm-bfsg-ast-remediator.php:125 wm-bfsg-ast-remediator.php:156
+msgid "WM BFSG Remediator Status"
+msgstr "Stat ta' WM BFSG Remediator"
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

@@ -1,0 +1,411 @@
+# Translation of wm-bfsg-ast-remediator in lv
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-bfsg-ast-remediator 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-bfsg-ast-"
+"remediator\n"
+"POT-Creation-Date: 2026-11-21T12:52:58+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:52+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-bfsg-ast-remediator\n"
+
+#. Plugin Name of the plugin
+#: wm-bfsg-ast-remediator.php includes/Admin/AdminDashboard.php:120
+#: includes/Admin/AdminDashboard.php:248
+msgid "WM BFSG AST Remediator"
+msgstr "WM BFSG AST Remediator"
+
+#. Plugin URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+
+#. Description of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln: lang-Attribut, Sprunglink zum Hauptbereich, alt-Attribut für Bilder, "
+"aria-label für unbeschriftete Formularfelder, Namen für mehrere "
+"Navigationen. Prüft keine Barrierefreiheit und macht keine Seite BFSG-"
+"konform."
+msgstr ""
+"Pārraksta katras publiskās lapas HTML pirms piegādes ar pieciem fiksētiem "
+"noteikumiem: lang atribūts, pārlēkšanas saite uz galveno sadaļu, alt "
+"atribūts attēliem, aria-label nemarķētiem formas laukiem un nosaukumi "
+"vairākām navigācijām. Neveic piekļūstamības auditu un nepadara vietni BFSG "
+"atbilstošu."
+
+#. Author of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:77
+msgid "Sprache des Dokuments"
+msgstr "Dokumenta valoda"
+
+#: includes/Admin/AdminDashboard.php:78
+msgid ""
+"Setzt lang am <html>-Element aus der Spracheinstellung von WordPress, wenn "
+"es fehlt oder leer ist. Läuft immer."
+msgstr ""
+"Iestata lang atribūtu <html> elementam no WordPress valodas iestatījuma, ja "
+"tas trūkst vai ir tukšs. Darbojas vienmēr."
+
+#: includes/Admin/AdminDashboard.php:81
+msgid "Sprunglink zum Hauptbereich"
+msgstr "Pārlēkšanas saite uz galveno saturu"
+
+#: includes/Admin/AdminDashboard.php:82
+msgid ""
+"Wenn die Seite ein <main> (oder role=\"main\") und keinen eigenen Sprunglink "
+"hat: fügt am Anfang von <body> „Zum Inhalt springen“ ein, das erst bei Fokus "
+"sichtbar wird und auf die id des Hauptbereichs zeigt (fehlt sie, wird main-"
+"content gesetzt)."
+msgstr ""
+"Ja lapā ir <main> (vai role=\"main\") un nav savas pārlēkšanas saites: "
+"<body> sākumā ievieto „Zum Inhalt springen“, kas kļūst redzama fokusā un "
+"norāda uz galvenās sadaļas id (ja trūkst, iestata main-content)."
+
+#: includes/Admin/AdminDashboard.php:85
+msgid "alt-Attribut für Bilder"
+msgstr "alt atribūts attēliem"
+
+#: includes/Admin/AdminDashboard.php:86
+msgid ""
+"Gibt jedem img-Element ohne alt ein alt: leer, wenn der Dateipfad icon oder "
+"decor enthält, sonst den Dateinamen ohne Endung. Ein Dateiname ist keine "
+"Bildbeschreibung."
+msgstr ""
+"Piešķir katram img-Element bez alt atribūtu alt: tukšu, ja ceļš satur icon "
+"vai decor, citādi faila nosaukumu bez paplašinājuma. Faila nosaukums nav "
+"attēla apraksts."
+
+#: includes/Admin/AdminDashboard.php:89
+msgid "aria-label für unbeschriftete Formularfelder"
+msgstr "aria-label nemarķētiem formas laukiem"
+
+#: includes/Admin/AdminDashboard.php:90
+msgid ""
+"Feldern ohne label, aria-label, aria-labelledby oder title gibt es aria-"
+"label aus placeholder, sonst aus name, sonst „Eingabefeld“. Felder innerhalb "
+"eines <label> bleiben unverändert."
+msgstr ""
+"Laukiem bez label, aria-label, aria-labelledby vai title piešķir aria-label "
+"no placeholder, citādi no name, citādi „Eingabefeld“. Lauki <label> iekšpusē "
+"paliek nemainīti."
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Namen für mehrere Navigationen"
+msgstr "Nosaukumi vairākām navigācijām"
+
+#: includes/Admin/AdminDashboard.php:94
+msgid ""
+"Bei mehr als einem <nav> ohne Namen: aria-label nach der CSS-Klasse "
+"(Hauptnavigation, Fußzeilennavigation, Mobilmenü) oder „Navigation 1, 2 …“."
+msgstr ""
+"Ja ir vairāk nekā viens <nav> bez nosaukuma: piešķir aria-label pēc CSS "
+"klases (Hauptnavigation, Fußzeilennavigation, Mobilmenü) vai „Navigation 1, "
+"2 …“."
+
+#: includes/Admin/AdminDashboard.php:138
+msgid "Regeln laufen nicht: PHP-Erweiterung dom oder mbstring fehlt"
+msgstr "Noteikumi nedarbojas: trūkst PHP paplašinājuma dom vai mbstring"
+
+#: includes/Admin/AdminDashboard.php:140
+msgid "Regeln ändern das HTML der Frontend-Seiten"
+msgstr "Noteikumi maina publisko lapu HTML"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "Ausgeschaltet: das Frontend bleibt unverändert"
+msgstr "Izslēgts: publiskā daļa paliek nemainīga"
+
+#: includes/Admin/AdminDashboard.php:152
+msgid "Regeln eingeschaltet"
+msgstr "Ieslēgtie noteikumi"
+
+#: includes/Admin/AdminDashboard.php:158
+msgid "Einstellungen und Simulator"
+msgstr "Iestatījumi un simulators"
+
+#: includes/Admin/AdminDashboard.php:177
+msgid "WM BFSG Remediator"
+msgstr "WM BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:178
+msgid "BFSG Remediator"
+msgstr "BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:239
+msgid "Übersicht"
+msgstr "Pārskats"
+
+#: includes/Admin/AdminDashboard.php:240 includes/Admin/AdminDashboard.php:310
+msgid "Simulator"
+msgstr "Simulators"
+
+#: includes/Admin/AdminDashboard.php:241 includes/Admin/AdminDashboard.php:370
+msgid "Regeln"
+msgstr "Noteikumi"
+
+#: includes/Admin/AdminDashboard.php:242
+msgid "Was es nicht tut"
+msgstr "Ko tas nedara"
+
+#: includes/Admin/AdminDashboard.php:249
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln. Es prüft nicht, ob eine Seite barrierefrei ist, und macht keine "
+"Website BFSG-konform."
+msgstr ""
+"Maina katras publiskās lapas HTML pirms piegādes ar pieciem fiksētiem "
+"noteikumiem. Nepārbauda, vai lapa ir piekļūstama, un nepadara nevienu vietni "
+"BFSG atbilstošu."
+
+#: includes/Admin/AdminDashboard.php:252
+msgid "Part of the WM Suite plugin family"
+msgstr "Daļa no WM Suite spraudņu saimes"
+
+#: includes/Admin/AdminDashboard.php:254
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Standalone"
+msgstr "Patstāvīgs"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Eingeschaltet"
+msgstr "Ieslēgts"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Läuft nicht"
+msgstr "Nedarbojas"
+
+#: includes/Admin/AdminDashboard.php:265
+msgid "Einstellungen gespeichert. Sie gelten ab dem nächsten Seitenaufruf."
+msgstr "Iestatījumi saglabāti. Tie stājas spēkā nākamajā lapas ielādē."
+
+#: includes/Admin/AdminDashboard.php:268
+msgid "Bereiche"
+msgstr "Sadaļas"
+
+#: includes/Admin/AdminDashboard.php:276
+msgid "Was gerade läuft"
+msgstr "Kas pašlaik darbojas"
+
+#: includes/Admin/AdminDashboard.php:277
+msgid ""
+"Gelesen aus den gespeicherten Einstellungen beim Aufruf dieser Seite. Das "
+"Plugin führt keine Statistik darüber, wie oft eine Regel etwas geändert hat."
+msgstr ""
+"Nolasīts no saglabātajiem iestatījumiem, atverot šo lapu. Spraudnis neapkopo "
+"statistiku par to, cik bieži noteikums kaut ko ir mainījis."
+
+#: includes/Admin/AdminDashboard.php:281
+msgid "Baustein"
+msgstr "Komponents"
+
+#: includes/Admin/AdminDashboard.php:282
+msgid "Zustand"
+msgstr "Stāvoklis"
+
+#: includes/Admin/AdminDashboard.php:283
+msgid "Was er tut"
+msgstr "Ko tas dara"
+
+#: includes/Admin/AdminDashboard.php:288
+msgid "Engine"
+msgstr "Dzinējs"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "an"
+msgstr "iesl."
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "aus"
+msgstr "izsl."
+
+#: includes/Admin/AdminDashboard.php:290
+msgid ""
+"Puffert die Ausgabe jeder Frontend-Seite (nicht Admin, AJAX, Cron, REST) ab "
+"template_redirect und wendet die eingeschalteten Regeln auf Dokumente mit "
+"<html> an."
+msgstr ""
+"Buferē katras publiskās lapas izvadi (ne admin, AJAX, cron vai REST) pie "
+"template_redirect un piemēro ieslēgtos noteikumus dokumentiem ar <html>."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "PHP dom und mbstring"
+msgstr "PHP dom un mbstring"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "vorhanden"
+msgstr "pieejami"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "fehlt"
+msgstr "trūkst"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid ""
+"Ohne diese Erweiterungen laufen die Regeln nicht und die Seiten bleiben "
+"unverändert."
+msgstr ""
+"Bez šiem paplašinājumiem noteikumi nedarbojas un lapas paliek nemainītas."
+
+#: includes/Admin/AdminDashboard.php:311
+msgid ""
+"Führt dieselbe Engine mit denselben gespeicherten Regeln aus wie das "
+"Frontend. Nur vollständige Dokumente mit <html> werden verarbeitet."
+msgstr ""
+"Izpilda tieši to pašu dzinēju ar tiem pašiem saglabātajiem noteikumiem kā "
+"publiskajā daļā. Tiek apstrādāti tikai pilni dokumenti ar <html>."
+
+#: includes/Admin/AdminDashboard.php:314
+msgid "HTML-Dokument"
+msgstr "HTML dokuments"
+
+#: includes/Admin/AdminDashboard.php:316
+msgid "Regeln anwenden"
+msgstr "Piemērot noteikumus"
+
+#: includes/Admin/AdminDashboard.php:319
+msgid "Ergebnis"
+msgstr "Rezultāts"
+
+#: includes/Admin/AdminDashboard.php:334
+msgid "Wird verarbeitet …"
+msgstr "Apstrādā …"
+
+#: includes/Admin/AdminDashboard.php:345
+msgid "Die Anfrage ist fehlgeschlagen."
+msgstr "Pieprasījums neizdevās."
+
+#: includes/Admin/AdminDashboard.php:350
+msgid "Regeln haben das Dokument geändert:"
+msgstr "noteikumi mainīja dokumentu:"
+
+#: includes/Admin/AdminDashboard.php:351
+msgid ""
+"Keine aktive Regel hat etwas geändert. Das ist keine Aussage über die "
+"Barrierefreiheit."
+msgstr ""
+"Neviens aktīvs noteikums neko nemainīja. Tas nav atzinums par piekļūstamību."
+
+#: includes/Admin/AdminDashboard.php:361
+msgid "Verbindungsfehler."
+msgstr "Savienojuma kļūda."
+
+#: includes/Admin/AdminDashboard.php:377
+msgid "Engine einschalten"
+msgstr "Ieslēgt dzinēju"
+
+#: includes/Admin/AdminDashboard.php:379
+msgid ""
+"Aus: keine Frontend-Seite wird verändert. Die Sprache des Dokuments hat "
+"keinen eigenen Schalter und läuft, solange die Engine an ist."
+msgstr ""
+"Izslēgts: neviena publiskā lapa netiek mainīta. Dokumenta valodai nav "
+"atsevišķa slēdža, un tā darbojas, kamēr dzinējs ir ieslēgts."
+
+#: includes/Admin/AdminDashboard.php:395
+msgid "Einstellungen beim Deinstallieren löschen"
+msgstr "Dzēst iestatījumus atinstalējot"
+
+#: includes/Admin/AdminDashboard.php:397
+msgid ""
+"Standardmäßig bleiben alle gespeicherten Optionen bei der Deinstallation "
+"erhalten. Nur wenn dieses Kontrollkästchen aktiviert ist, entfernt "
+"uninstall.php sämtliche Optionen des Plugins."
+msgstr ""
+"Pēc noklusējuma visas saglabātās opcijas atinstalēšanas laikā tiek "
+"saglabātas. Tikai tad, ja šī izvēles rūtiņa ir atzīmēta, uninstall.php dzēš "
+"visas spraudņa opcijas."
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Einstellungen speichern"
+msgstr "Saglabāt iestatījumus"
+
+#: includes/Admin/AdminDashboard.php:406
+msgid "Was das Plugin nicht tut"
+msgstr "Ko spraudnis nedara"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid ""
+"Es prüft keine Seite auf Barrierefreiheit und erstellt keinen Bericht; ob "
+"eine Website BFSG, BITV 2.0 oder WCAG genügt, beantwortet es nicht."
+msgstr ""
+"Tas nepārbauda nevienas lapas piekļūstamību un neveido pārskatus; tas "
+"neatbild, vai vietne atbilst BFSG, BITV 2.0 vai WCAG."
+
+#: includes/Admin/AdminDashboard.php:409
+msgid ""
+"Kontraste, Überschriftenhierarchie, Tastaturbedienung, Fokus, Schaltflächen- "
+"und Linktexte, Videos, PDFs und Inhalte, die per JavaScript nachgeladen "
+"werden, bleiben unberührt."
+msgstr ""
+"Kontrasti, virsrakstu hierarhija, tastatūras vadība, fokuss, pogu un saišu "
+"teksti, video, PDF datnes un ar JavaScript ielādēts saturs paliek neskarts."
+
+#: includes/Admin/AdminDashboard.php:410
+msgid ""
+"Ein aus dem Dateinamen gebildeter alt-Text („IMG 2034“) und ein aria-label "
+"aus name oder placeholder sind Notbehelfe, keine Beschreibungen. Die "
+"eigentliche Korrektur gehört in Theme und Inhalt."
+msgstr ""
+"No faila nosaukuma veidots alt teksts („IMG 2034“) un aria-label no name vai "
+"placeholder ir pagaidu aizvietotāji, nevis apraksti. Īstais labojums jāveic "
+"tēmā un saturā."
+
+#: includes/Admin/AdminDashboard.php:411
+msgid ""
+"Die Änderungen existieren nur im ausgelieferten HTML: Editor, Datenbank und "
+"Theme-Dateien bleiben wie sie sind, und Seiten aus einem Seiten-Cache "
+"bekommen sie nur, wenn der Cache nach dem Plugin gebaut wurde."
+msgstr ""
+"Izmaiņas pastāv tikai piegādātajā HTML: redaktors, datubāze un tēmas faili "
+"nemainās, un kešatmiņas lapas tās saņem tikai tad, ja kešatmiņa izveidota "
+"pēc spraudņa."
+
+#: wm-bfsg-ast-remediator.php:99
+msgid "HTML-Regeln inaktiv (PHP dom oder mbstring fehlt)"
+msgstr "HTML noteikumi neaktīvi (trūkst PHP dom vai mbstring)"
+
+#: wm-bfsg-ast-remediator.php:102
+msgid "HTML-Regeln ausgeschaltet"
+msgstr "HTML noteikumi izslēgti"
+
+#. translators: %1$d: number of enabled rules, %2$d: total number of rules
+#: wm-bfsg-ast-remediator.php:105
+#, php-format
+msgid "HTML-Regeln aktiv (%1$d/%2$d Regeln eingeschaltet)"
+msgstr "HTML noteikumi aktīvi (%1$d/%2$d noteikumi ieslēgti)"
+
+#: wm-bfsg-ast-remediator.php:125 wm-bfsg-ast-remediator.php:156
+msgid "WM BFSG Remediator Status"
+msgstr "WM BFSG Remediator statuss"
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

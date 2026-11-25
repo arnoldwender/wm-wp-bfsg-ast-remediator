@@ -1,0 +1,411 @@
+# Translation of wm-bfsg-ast-remediator in sl_SI
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-bfsg-ast-remediator 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-bfsg-ast-"
+"remediator\n"
+"POT-Creation-Date: 2026-11-21T12:52:58+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:52+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language: sl_SI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-bfsg-ast-remediator\n"
+
+#. Plugin Name of the plugin
+#: wm-bfsg-ast-remediator.php includes/Admin/AdminDashboard.php:120
+#: includes/Admin/AdminDashboard.php:248
+msgid "WM BFSG AST Remediator"
+msgstr "WM BFSG AST Remediator"
+
+#. Plugin URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+
+#. Description of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln: lang-Attribut, Sprunglink zum Hauptbereich, alt-Attribut für Bilder, "
+"aria-label für unbeschriftete Formularfelder, Namen für mehrere "
+"Navigationen. Prüft keine Barrierefreiheit und macht keine Seite BFSG-"
+"konform."
+msgstr ""
+"Prepiše HTML vsake predstavitvene strani pred dostavo s petimi fiksnimi "
+"pravili: atribut lang, povezava za preskok na glavno območje, atribut alt "
+"pri slikah, aria-label pri neoznačenih poljih obrazca in imena za več "
+"navigacij. Ne preverja dostopnosti in spletnega mesta ne naredi skladnega z "
+"BFSG."
+
+#. Author of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:77
+msgid "Sprache des Dokuments"
+msgstr "Jezik dokumenta"
+
+#: includes/Admin/AdminDashboard.php:78
+msgid ""
+"Setzt lang am <html>-Element aus der Spracheinstellung von WordPress, wenn "
+"es fehlt oder leer ist. Läuft immer."
+msgstr ""
+"Nastavi lang na elementu <html> iz jezikovne nastavitve WordPressa, če "
+"manjka ali je prazen. Vedno se izvede."
+
+#: includes/Admin/AdminDashboard.php:81
+msgid "Sprunglink zum Hauptbereich"
+msgstr "Povezava za preskok na glavno vsebino"
+
+#: includes/Admin/AdminDashboard.php:82
+msgid ""
+"Wenn die Seite ein <main> (oder role=\"main\") und keinen eigenen Sprunglink "
+"hat: fügt am Anfang von <body> „Zum Inhalt springen“ ein, das erst bei Fokus "
+"sichtbar wird und auf die id des Hauptbereichs zeigt (fehlt sie, wird main-"
+"content gesetzt)."
+msgstr ""
+"Ko ima stran <main> (ali role=\"main\") in nima lastne povezave za preskok: "
+"na začetek <body> vstavi „Zum Inhalt springen“, vidno ob fokusu in usmerjeno "
+"na id glavnega območja (če manjka, nastavi main-content)."
+
+#: includes/Admin/AdminDashboard.php:85
+msgid "alt-Attribut für Bilder"
+msgstr "Atribut alt za slike"
+
+#: includes/Admin/AdminDashboard.php:86
+msgid ""
+"Gibt jedem img-Element ohne alt ein alt: leer, wenn der Dateipfad icon oder "
+"decor enthält, sonst den Dateinamen ohne Endung. Ein Dateiname ist keine "
+"Bildbeschreibung."
+msgstr ""
+"Vsakemu elementu img-Element brez alt dodeli atribut alt: prazen, če pot "
+"vsebuje icon ali decor, sicer ime datoteke brez končnice. Ime datoteke ni "
+"opis slike."
+
+#: includes/Admin/AdminDashboard.php:89
+msgid "aria-label für unbeschriftete Formularfelder"
+msgstr "aria-label za neoznačena polja obrazca"
+
+#: includes/Admin/AdminDashboard.php:90
+msgid ""
+"Feldern ohne label, aria-label, aria-labelledby oder title gibt es aria-"
+"label aus placeholder, sonst aus name, sonst „Eingabefeld“. Felder innerhalb "
+"eines <label> bleiben unverändert."
+msgstr ""
+"Poljem brez label, aria-label, aria-labelledby ali title dodeli aria-label "
+"iz placeholder, sicer iz name, sicer „Eingabefeld“. Polja znotraj <label> "
+"ostanejo nespremenjena."
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Namen für mehrere Navigationen"
+msgstr "Imena za več navigacij"
+
+#: includes/Admin/AdminDashboard.php:94
+msgid ""
+"Bei mehr als einem <nav> ohne Namen: aria-label nach der CSS-Klasse "
+"(Hauptnavigation, Fußzeilennavigation, Mobilmenü) oder „Navigation 1, 2 …“."
+msgstr ""
+"Pri več kot enem <nav> brez imena: nastavi aria-label glede na razred CSS "
+"(Hauptnavigation, Fußzeilennavigation, Mobilmenü) ali „Navigation 1, 2 …“."
+
+#: includes/Admin/AdminDashboard.php:138
+msgid "Regeln laufen nicht: PHP-Erweiterung dom oder mbstring fehlt"
+msgstr "Pravila se ne izvajajo: manjka razširitev PHP dom ali mbstring"
+
+#: includes/Admin/AdminDashboard.php:140
+msgid "Regeln ändern das HTML der Frontend-Seiten"
+msgstr "Pravila spreminjajo HTML predstavitvenih strani"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "Ausgeschaltet: das Frontend bleibt unverändert"
+msgstr "Izklopljeno: predstavitveni del ostane nespremenjen"
+
+#: includes/Admin/AdminDashboard.php:152
+msgid "Regeln eingeschaltet"
+msgstr "Vklopljena pravila"
+
+#: includes/Admin/AdminDashboard.php:158
+msgid "Einstellungen und Simulator"
+msgstr "Nastavitve in simulator"
+
+#: includes/Admin/AdminDashboard.php:177
+msgid "WM BFSG Remediator"
+msgstr "WM BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:178
+msgid "BFSG Remediator"
+msgstr "BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:239
+msgid "Übersicht"
+msgstr "Pregled"
+
+#: includes/Admin/AdminDashboard.php:240 includes/Admin/AdminDashboard.php:310
+msgid "Simulator"
+msgstr "Simulator"
+
+#: includes/Admin/AdminDashboard.php:241 includes/Admin/AdminDashboard.php:370
+msgid "Regeln"
+msgstr "Pravila"
+
+#: includes/Admin/AdminDashboard.php:242
+msgid "Was es nicht tut"
+msgstr "Česa ne počne"
+
+#: includes/Admin/AdminDashboard.php:249
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln. Es prüft nicht, ob eine Seite barrierefrei ist, und macht keine "
+"Website BFSG-konform."
+msgstr ""
+"Spremeni HTML vsake predstavitvene strani pred dostavo s petimi fiksnimi "
+"pravili. Ne preverja, ali je stran dostopna, in nobenega spletnega mesta ne "
+"naredi skladnega z BFSG."
+
+#: includes/Admin/AdminDashboard.php:252
+msgid "Part of the WM Suite plugin family"
+msgstr "Del družine vtičnikov WM Suite"
+
+#: includes/Admin/AdminDashboard.php:254
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Standalone"
+msgstr "Samostojen"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Eingeschaltet"
+msgstr "Vklopljeno"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Läuft nicht"
+msgstr "Ne deluje"
+
+#: includes/Admin/AdminDashboard.php:265
+msgid "Einstellungen gespeichert. Sie gelten ab dem nächsten Seitenaufruf."
+msgstr "Nastavitve so shranjene. Veljajo od naslednjega nalaganja strani."
+
+#: includes/Admin/AdminDashboard.php:268
+msgid "Bereiche"
+msgstr "Razdelki"
+
+#: includes/Admin/AdminDashboard.php:276
+msgid "Was gerade läuft"
+msgstr "Kaj se trenutno izvaja"
+
+#: includes/Admin/AdminDashboard.php:277
+msgid ""
+"Gelesen aus den gespeicherten Einstellungen beim Aufruf dieser Seite. Das "
+"Plugin führt keine Statistik darüber, wie oft eine Regel etwas geändert hat."
+msgstr ""
+"Prebrano iz shranjenih nastavitev ob odprtju te strani. Vtičnik ne vodi "
+"statistike o tem, kako pogosto je pravilo nekaj spremenilo."
+
+#: includes/Admin/AdminDashboard.php:281
+msgid "Baustein"
+msgstr "Gradnik"
+
+#: includes/Admin/AdminDashboard.php:282
+msgid "Zustand"
+msgstr "Stanje"
+
+#: includes/Admin/AdminDashboard.php:283
+msgid "Was er tut"
+msgstr "Kaj počne"
+
+#: includes/Admin/AdminDashboard.php:288
+msgid "Engine"
+msgstr "Pogon"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "an"
+msgstr "vkl."
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "aus"
+msgstr "izkl."
+
+#: includes/Admin/AdminDashboard.php:290
+msgid ""
+"Puffert die Ausgabe jeder Frontend-Seite (nicht Admin, AJAX, Cron, REST) ab "
+"template_redirect und wendet die eingeschalteten Regeln auf Dokumente mit "
+"<html> an."
+msgstr ""
+"Medpomni izhod vsake predstavitvene strani (ne skrbništva, AJAX, cron ali "
+"REST) ob template_redirect in uporabi vklopljena pravila za dokumente z "
+"<html>."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "PHP dom und mbstring"
+msgstr "PHP dom in mbstring"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "vorhanden"
+msgstr "prisotni"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "fehlt"
+msgstr "manjkata"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid ""
+"Ohne diese Erweiterungen laufen die Regeln nicht und die Seiten bleiben "
+"unverändert."
+msgstr ""
+"Brez teh razširitev se pravila ne izvajajo in strani ostanejo nespremenjene."
+
+#: includes/Admin/AdminDashboard.php:311
+msgid ""
+"Führt dieselbe Engine mit denselben gespeicherten Regeln aus wie das "
+"Frontend. Nur vollständige Dokumente mit <html> werden verarbeitet."
+msgstr ""
+"Zažene popolnoma enak pogon z enakimi shranjenimi pravili kot na "
+"predstavitvenem delu. Obdelajo se le celotni dokumenti z <html>."
+
+#: includes/Admin/AdminDashboard.php:314
+msgid "HTML-Dokument"
+msgstr "Dokument HTML"
+
+#: includes/Admin/AdminDashboard.php:316
+msgid "Regeln anwenden"
+msgstr "Uporabi pravila"
+
+#: includes/Admin/AdminDashboard.php:319
+msgid "Ergebnis"
+msgstr "Rezultat"
+
+#: includes/Admin/AdminDashboard.php:334
+msgid "Wird verarbeitet …"
+msgstr "Obdelovanje …"
+
+#: includes/Admin/AdminDashboard.php:345
+msgid "Die Anfrage ist fehlgeschlagen."
+msgstr "Zahteva ni uspela."
+
+#: includes/Admin/AdminDashboard.php:350
+msgid "Regeln haben das Dokument geändert:"
+msgstr "pravil je spremenilo dokument:"
+
+#: includes/Admin/AdminDashboard.php:351
+msgid ""
+"Keine aktive Regel hat etwas geändert. Das ist keine Aussage über die "
+"Barrierefreiheit."
+msgstr ""
+"Nobeno aktivno pravilo ni ničesar spremenilo. To ni izjava o dostopnosti."
+
+#: includes/Admin/AdminDashboard.php:361
+msgid "Verbindungsfehler."
+msgstr "Napaka povezave."
+
+#: includes/Admin/AdminDashboard.php:377
+msgid "Engine einschalten"
+msgstr "Vklopi pogon"
+
+#: includes/Admin/AdminDashboard.php:379
+msgid ""
+"Aus: keine Frontend-Seite wird verändert. Die Sprache des Dokuments hat "
+"keinen eigenen Schalter und läuft, solange die Engine an ist."
+msgstr ""
+"Izkl.: nobena predstavitvena stran se ne spremeni. Jezik dokumenta nima "
+"lastnega stikala in se izvaja, dokler je pogon vklopljen."
+
+#: includes/Admin/AdminDashboard.php:395
+msgid "Einstellungen beim Deinstallieren löschen"
+msgstr "Izbriši nastavitve ob odstranitvi"
+
+#: includes/Admin/AdminDashboard.php:397
+msgid ""
+"Standardmäßig bleiben alle gespeicherten Optionen bei der Deinstallation "
+"erhalten. Nur wenn dieses Kontrollkästchen aktiviert ist, entfernt "
+"uninstall.php sämtliche Optionen des Plugins."
+msgstr ""
+"Privzeto se vse shranjene možnosti ob odstranitvi ohranijo. Šele če je to "
+"potrditveno polje označeno, uninstall.php odstrani vse možnosti vtičnika."
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Einstellungen speichern"
+msgstr "Shrani nastavitve"
+
+#: includes/Admin/AdminDashboard.php:406
+msgid "Was das Plugin nicht tut"
+msgstr "Česa vtičnik ne počne"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid ""
+"Es prüft keine Seite auf Barrierefreiheit und erstellt keinen Bericht; ob "
+"eine Website BFSG, BITV 2.0 oder WCAG genügt, beantwortet es nicht."
+msgstr ""
+"Ne preverja dostopnosti nobene strani in ne ustvarja poročil; ne odgovarja "
+"na vprašanje, ali spletno mesto izpolnjuje BFSG, BITV 2.0 ali WCAG."
+
+#: includes/Admin/AdminDashboard.php:409
+msgid ""
+"Kontraste, Überschriftenhierarchie, Tastaturbedienung, Fokus, Schaltflächen- "
+"und Linktexte, Videos, PDFs und Inhalte, die per JavaScript nachgeladen "
+"werden, bleiben unberührt."
+msgstr ""
+"Kontrasti, hierarhija naslovov, upravljanje s tipkovnico, fokus, besedila "
+"gumbov in povezav, videoposnetki, datoteke PDF ter vsebina, naložena z "
+"JavaScriptom, ostanejo nedotaknjeni."
+
+#: includes/Admin/AdminDashboard.php:410
+msgid ""
+"Ein aus dem Dateinamen gebildeter alt-Text („IMG 2034“) und ein aria-label "
+"aus name oder placeholder sind Notbehelfe, keine Beschreibungen. Die "
+"eigentliche Korrektur gehört in Theme und Inhalt."
+msgstr ""
+"Besedilo alt iz imena datoteke („IMG 2034“) in aria-label iz name ali "
+"placeholder sta zasilna nadomestka, ne opisa. Pravi popravek sodi v temo in "
+"vsebino."
+
+#: includes/Admin/AdminDashboard.php:411
+msgid ""
+"Die Änderungen existieren nur im ausgelieferten HTML: Editor, Datenbank und "
+"Theme-Dateien bleiben wie sie sind, und Seiten aus einem Seiten-Cache "
+"bekommen sie nur, wenn der Cache nach dem Plugin gebaut wurde."
+msgstr ""
+"Spremembe obstajajo samo v dostavljenem HTML-ju: urejevalnik, podatkovna "
+"zbirka in datoteke teme ostanejo nespremenjeni, strani iz predpomnilnika pa "
+"jih prejmejo le, če je bil predpomnilnik zgrajen po vtičniku."
+
+#: wm-bfsg-ast-remediator.php:99
+msgid "HTML-Regeln inaktiv (PHP dom oder mbstring fehlt)"
+msgstr "Pravila HTML neaktivna (manjka PHP dom ali mbstring)"
+
+#: wm-bfsg-ast-remediator.php:102
+msgid "HTML-Regeln ausgeschaltet"
+msgstr "Pravila HTML izklopljena"
+
+#. translators: %1$d: number of enabled rules, %2$d: total number of rules
+#: wm-bfsg-ast-remediator.php:105
+#, php-format
+msgid "HTML-Regeln aktiv (%1$d/%2$d Regeln eingeschaltet)"
+msgstr "Pravila HTML aktivna (%1$d/%2$d pravil vklopljenih)"
+
+#: wm-bfsg-ast-remediator.php:125 wm-bfsg-ast-remediator.php:156
+msgid "WM BFSG Remediator Status"
+msgstr "Stanje WM BFSG Remediator"
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

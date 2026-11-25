@@ -1,0 +1,23 @@
+{
+    "name": "arnoldwender/wm-bfsg-ast-remediator",
+    "description": "Rewrites frontend HTML with five fixed accessibility rules; no audit and no compliance assessment.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WMCyber\\BFSG\\Remediator\\": "includes/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "php tests/test-suite.php",
+            "php tests/test-ui-family.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

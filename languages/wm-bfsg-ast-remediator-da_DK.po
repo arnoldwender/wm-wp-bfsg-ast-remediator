@@ -1,0 +1,410 @@
+# Translation of wm-bfsg-ast-remediator in da_DK
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-bfsg-ast-remediator 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-bfsg-ast-"
+"remediator\n"
+"POT-Creation-Date: 2026-11-21T12:52:58+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:52+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-bfsg-ast-remediator\n"
+
+#. Plugin Name of the plugin
+#: wm-bfsg-ast-remediator.php includes/Admin/AdminDashboard.php:120
+#: includes/Admin/AdminDashboard.php:248
+msgid "WM BFSG AST Remediator"
+msgstr "WM BFSG AST Remediator"
+
+#. Plugin URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+
+#. Description of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln: lang-Attribut, Sprunglink zum Hauptbereich, alt-Attribut für Bilder, "
+"aria-label für unbeschriftete Formularfelder, Namen für mehrere "
+"Navigationen. Prüft keine Barrierefreiheit und macht keine Seite BFSG-"
+"konform."
+msgstr ""
+"Omskriver HTML på hver frontend-side før levering med fem faste regler: lang-"
+"attribut, springlink til hovedområdet, alt-attribut på billeder, aria-label "
+"på ubeskrevne formularfelter og navne på flere navigationer. Udfører ingen "
+"tilgængelighedskontrol og gør ikke et websted BFSG-kompatibelt."
+
+#. Author of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:77
+msgid "Sprache des Dokuments"
+msgstr "Dokumentets sprog"
+
+#: includes/Admin/AdminDashboard.php:78
+msgid ""
+"Setzt lang am <html>-Element aus der Spracheinstellung von WordPress, wenn "
+"es fehlt oder leer ist. Läuft immer."
+msgstr ""
+"Sætter lang på <html>-elementet ud fra WordPress-sprogindstillingen, hvis "
+"det mangler eller er tomt. Kører altid."
+
+#: includes/Admin/AdminDashboard.php:81
+msgid "Sprunglink zum Hauptbereich"
+msgstr "Springlink til hovedområdet"
+
+#: includes/Admin/AdminDashboard.php:82
+msgid ""
+"Wenn die Seite ein <main> (oder role=\"main\") und keinen eigenen Sprunglink "
+"hat: fügt am Anfang von <body> „Zum Inhalt springen“ ein, das erst bei Fokus "
+"sichtbar wird und auf die id des Hauptbereichs zeigt (fehlt sie, wird main-"
+"content gesetzt)."
+msgstr ""
+"Når siden har et <main> (eller role=\"main\") og intet eget springlink: "
+"indsætter „Zum Inhalt springen“ først i <body>, synligt ved fokus og pegende "
+"på hovedområdets id (sætter main-content, hvis det mangler)."
+
+#: includes/Admin/AdminDashboard.php:85
+msgid "alt-Attribut für Bilder"
+msgstr "alt-attribut til billeder"
+
+#: includes/Admin/AdminDashboard.php:86
+msgid ""
+"Gibt jedem img-Element ohne alt ein alt: leer, wenn der Dateipfad icon oder "
+"decor enthält, sonst den Dateinamen ohne Endung. Ein Dateiname ist keine "
+"Bildbeschreibung."
+msgstr ""
+"Giver hvert img-Element uden alt en alt-attribut: tom hvis filstien "
+"indeholder icon eller decor, ellers filnavnet uden filendelse. Et filnavn er "
+"ikke en billedbeskrivelse."
+
+#: includes/Admin/AdminDashboard.php:89
+msgid "aria-label für unbeschriftete Formularfelder"
+msgstr "aria-label til formularfelter uden label"
+
+#: includes/Admin/AdminDashboard.php:90
+msgid ""
+"Feldern ohne label, aria-label, aria-labelledby oder title gibt es aria-"
+"label aus placeholder, sonst aus name, sonst „Eingabefeld“. Felder innerhalb "
+"eines <label> bleiben unverändert."
+msgstr ""
+"Felter uden label, aria-label, aria-labelledby eller title får aria-label "
+"fra placeholder, ellers fra name, ellers „Eingabefeld“. Felter inde i et "
+"<label> ændres ikke."
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Namen für mehrere Navigationen"
+msgstr "Navne til flere navigationer"
+
+#: includes/Admin/AdminDashboard.php:94
+msgid ""
+"Bei mehr als einem <nav> ohne Namen: aria-label nach der CSS-Klasse "
+"(Hauptnavigation, Fußzeilennavigation, Mobilmenü) oder „Navigation 1, 2 …“."
+msgstr ""
+"Ved mere end ét <nav> uden navn: tilføjer aria-label ud fra CSS-klassen "
+"(Hauptnavigation, Fußzeilennavigation, Mobilmenü) eller „Navigation 1, 2 …“."
+
+#: includes/Admin/AdminDashboard.php:138
+msgid "Regeln laufen nicht: PHP-Erweiterung dom oder mbstring fehlt"
+msgstr "Regler kører ikke: PHP-udvidelsen dom eller mbstring mangler"
+
+#: includes/Admin/AdminDashboard.php:140
+msgid "Regeln ändern das HTML der Frontend-Seiten"
+msgstr "Regler ændrer frontend-sidernes HTML"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "Ausgeschaltet: das Frontend bleibt unverändert"
+msgstr "Slået fra: frontend forbliver uændret"
+
+#: includes/Admin/AdminDashboard.php:152
+msgid "Regeln eingeschaltet"
+msgstr "Regler slået til"
+
+#: includes/Admin/AdminDashboard.php:158
+msgid "Einstellungen und Simulator"
+msgstr "Indstillinger og simulator"
+
+#: includes/Admin/AdminDashboard.php:177
+msgid "WM BFSG Remediator"
+msgstr "WM BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:178
+msgid "BFSG Remediator"
+msgstr "BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:239
+msgid "Übersicht"
+msgstr "Oversigt"
+
+#: includes/Admin/AdminDashboard.php:240 includes/Admin/AdminDashboard.php:310
+msgid "Simulator"
+msgstr "Simulator"
+
+#: includes/Admin/AdminDashboard.php:241 includes/Admin/AdminDashboard.php:370
+msgid "Regeln"
+msgstr "Regler"
+
+#: includes/Admin/AdminDashboard.php:242
+msgid "Was es nicht tut"
+msgstr "Hvad det ikke gør"
+
+#: includes/Admin/AdminDashboard.php:249
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln. Es prüft nicht, ob eine Seite barrierefrei ist, und macht keine "
+"Website BFSG-konform."
+msgstr ""
+"Ændrer HTML på hver frontend-side før visning med fem faste regler. Det "
+"kontrollerer ikke, om en side er tilgængelig, og gør intet websted BFSG-"
+"kompatibelt."
+
+#: includes/Admin/AdminDashboard.php:252
+msgid "Part of the WM Suite plugin family"
+msgstr "En del af WM Suite-pluginfamilien"
+
+#: includes/Admin/AdminDashboard.php:254
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Standalone"
+msgstr "Selvstændig"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Eingeschaltet"
+msgstr "Slået til"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Läuft nicht"
+msgstr "Kører ikke"
+
+#: includes/Admin/AdminDashboard.php:265
+msgid "Einstellungen gespeichert. Sie gelten ab dem nächsten Seitenaufruf."
+msgstr "Indstillinger gemt. De gælder fra næste sideindlæsning."
+
+#: includes/Admin/AdminDashboard.php:268
+msgid "Bereiche"
+msgstr "Sektioner"
+
+#: includes/Admin/AdminDashboard.php:276
+msgid "Was gerade läuft"
+msgstr "Hvad der kører lige nu"
+
+#: includes/Admin/AdminDashboard.php:277
+msgid ""
+"Gelesen aus den gespeicherten Einstellungen beim Aufruf dieser Seite. Das "
+"Plugin führt keine Statistik darüber, wie oft eine Regel etwas geändert hat."
+msgstr ""
+"Læst fra de gemte indstillinger ved indlæsning af denne side. Pluginet fører "
+"ingen statistik over, hvor ofte en regel har ændret noget."
+
+#: includes/Admin/AdminDashboard.php:281
+msgid "Baustein"
+msgstr "Komponent"
+
+#: includes/Admin/AdminDashboard.php:282
+msgid "Zustand"
+msgstr "Tilstand"
+
+#: includes/Admin/AdminDashboard.php:283
+msgid "Was er tut"
+msgstr "Hvad den gør"
+
+#: includes/Admin/AdminDashboard.php:288
+msgid "Engine"
+msgstr "Engine"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "an"
+msgstr "til"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "aus"
+msgstr "fra"
+
+#: includes/Admin/AdminDashboard.php:290
+msgid ""
+"Puffert die Ausgabe jeder Frontend-Seite (nicht Admin, AJAX, Cron, REST) ab "
+"template_redirect und wendet die eingeschalteten Regeln auf Dokumente mit "
+"<html> an."
+msgstr ""
+"Bufferlagrer output fra hver frontend-side (ikke admin, AJAX, cron eller "
+"REST) ved template_redirect og anvender de aktiverede regler på dokumenter "
+"med <html>."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "PHP dom und mbstring"
+msgstr "PHP dom og mbstring"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "vorhanden"
+msgstr "til stede"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "fehlt"
+msgstr "mangler"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid ""
+"Ohne diese Erweiterungen laufen die Regeln nicht und die Seiten bleiben "
+"unverändert."
+msgstr ""
+"Uden disse udvidelser kører reglerne ikke, og siderne forbliver uændrede."
+
+#: includes/Admin/AdminDashboard.php:311
+msgid ""
+"Führt dieselbe Engine mit denselben gespeicherten Regeln aus wie das "
+"Frontend. Nur vollständige Dokumente mit <html> werden verarbeitet."
+msgstr ""
+"Kører præcis samme engine med de samme gemte regler som på frontend. Kun "
+"komplette dokumenter med <html> behandles."
+
+#: includes/Admin/AdminDashboard.php:314
+msgid "HTML-Dokument"
+msgstr "HTML-dokument"
+
+#: includes/Admin/AdminDashboard.php:316
+msgid "Regeln anwenden"
+msgstr "Anvend regler"
+
+#: includes/Admin/AdminDashboard.php:319
+msgid "Ergebnis"
+msgstr "Resultat"
+
+#: includes/Admin/AdminDashboard.php:334
+msgid "Wird verarbeitet …"
+msgstr "Behandler …"
+
+#: includes/Admin/AdminDashboard.php:345
+msgid "Die Anfrage ist fehlgeschlagen."
+msgstr "Forespørgslen mislykkedes."
+
+#: includes/Admin/AdminDashboard.php:350
+msgid "Regeln haben das Dokument geändert:"
+msgstr "regler ændrede dokumentet:"
+
+#: includes/Admin/AdminDashboard.php:351
+msgid ""
+"Keine aktive Regel hat etwas geändert. Das ist keine Aussage über die "
+"Barrierefreiheit."
+msgstr ""
+"Ingen aktiv regel ændrede noget. Det er ikke et udsagn om tilgængelighed."
+
+#: includes/Admin/AdminDashboard.php:361
+msgid "Verbindungsfehler."
+msgstr "Forbindelsesfejl."
+
+#: includes/Admin/AdminDashboard.php:377
+msgid "Engine einschalten"
+msgstr "Slå engine til"
+
+#: includes/Admin/AdminDashboard.php:379
+msgid ""
+"Aus: keine Frontend-Seite wird verändert. Die Sprache des Dokuments hat "
+"keinen eigenen Schalter und läuft, solange die Engine an ist."
+msgstr ""
+"Fra: ingen frontend-side ændres. Dokumentets sprog har ingen egen kontakt og "
+"kører, så længe enginen er slået til."
+
+#: includes/Admin/AdminDashboard.php:395
+msgid "Einstellungen beim Deinstallieren löschen"
+msgstr "Slet indstillinger ved afinstallation"
+
+#: includes/Admin/AdminDashboard.php:397
+msgid ""
+"Standardmäßig bleiben alle gespeicherten Optionen bei der Deinstallation "
+"erhalten. Nur wenn dieses Kontrollkästchen aktiviert ist, entfernt "
+"uninstall.php sämtliche Optionen des Plugins."
+msgstr ""
+"Som standard bevares alle gemte indstillinger ved afinstallation. Kun når "
+"dette afkrydsningsfelt er markeret, fjerner uninstall.php alle pluginets "
+"indstillinger."
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Einstellungen speichern"
+msgstr "Gem indstillinger"
+
+#: includes/Admin/AdminDashboard.php:406
+msgid "Was das Plugin nicht tut"
+msgstr "Hvad pluginet ikke gør"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid ""
+"Es prüft keine Seite auf Barrierefreiheit und erstellt keinen Bericht; ob "
+"eine Website BFSG, BITV 2.0 oder WCAG genügt, beantwortet es nicht."
+msgstr ""
+"Det kontrollerer ingen side for tilgængelighed og opretter ingen rapport; om "
+"et websted opfylder BFSG, BITV 2.0 eller WCAG besvares ikke."
+
+#: includes/Admin/AdminDashboard.php:409
+msgid ""
+"Kontraste, Überschriftenhierarchie, Tastaturbedienung, Fokus, Schaltflächen- "
+"und Linktexte, Videos, PDFs und Inhalte, die per JavaScript nachgeladen "
+"werden, bleiben unberührt."
+msgstr ""
+"Kontraster, overskriftshierarki, tastaturbetjening, fokus, knap- og "
+"linktekster, videoer, PDF-filer og indhold indlæst med JavaScript forbliver "
+"urørte."
+
+#: includes/Admin/AdminDashboard.php:410
+msgid ""
+"Ein aus dem Dateinamen gebildeter alt-Text („IMG 2034“) und ein aria-label "
+"aus name oder placeholder sind Notbehelfe, keine Beschreibungen. Die "
+"eigentliche Korrektur gehört in Theme und Inhalt."
+msgstr ""
+"En alt-tekst dannet ud fra filnavnet („IMG 2034“) og en aria-label fra name "
+"eller placeholder er nødløsninger, ikke beskrivelser. Den rigtige rettelse "
+"hører hjemme i tema og indhold."
+
+#: includes/Admin/AdminDashboard.php:411
+msgid ""
+"Die Änderungen existieren nur im ausgelieferten HTML: Editor, Datenbank und "
+"Theme-Dateien bleiben wie sie sind, und Seiten aus einem Seiten-Cache "
+"bekommen sie nur, wenn der Cache nach dem Plugin gebaut wurde."
+msgstr ""
+"Ændringerne findes kun i det leverede HTML: editor, database og temafiler "
+"forbliver som de er, og sider fra en sidecache får dem kun, hvis cachen er "
+"bygget efter pluginet."
+
+#: wm-bfsg-ast-remediator.php:99
+msgid "HTML-Regeln inaktiv (PHP dom oder mbstring fehlt)"
+msgstr "HTML-regler inaktive (PHP dom eller mbstring mangler)"
+
+#: wm-bfsg-ast-remediator.php:102
+msgid "HTML-Regeln ausgeschaltet"
+msgstr "HTML-regler slået fra"
+
+#. translators: %1$d: number of enabled rules, %2$d: total number of rules
+#: wm-bfsg-ast-remediator.php:105
+#, php-format
+msgid "HTML-Regeln aktiv (%1$d/%2$d Regeln eingeschaltet)"
+msgstr "HTML-regler aktive (%1$d/%2$d regler slået til)"
+
+#: wm-bfsg-ast-remediator.php:125 wm-bfsg-ast-remediator.php:156
+msgid "WM BFSG Remediator Status"
+msgstr "WM BFSG Remediator-status"
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

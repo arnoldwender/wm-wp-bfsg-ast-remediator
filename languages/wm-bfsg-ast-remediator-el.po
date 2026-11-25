@@ -1,0 +1,416 @@
+# Translation of wm-bfsg-ast-remediator in el
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-bfsg-ast-remediator 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-bfsg-ast-"
+"remediator\n"
+"POT-Creation-Date: 2026-11-21T12:52:58+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:52+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-bfsg-ast-"
+"remediator/issues>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-bfsg-ast-remediator\n"
+
+#. Plugin Name of the plugin
+#: wm-bfsg-ast-remediator.php includes/Admin/AdminDashboard.php:120
+#: includes/Admin/AdminDashboard.php:248
+msgid "WM BFSG AST Remediator"
+msgstr "WM BFSG AST Remediator"
+
+#. Plugin URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/"
+
+#. Description of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln: lang-Attribut, Sprunglink zum Hauptbereich, alt-Attribut für Bilder, "
+"aria-label für unbeschriftete Formularfelder, Namen für mehrere "
+"Navigationen. Prüft keine Barrierefreiheit und macht keine Seite BFSG-"
+"konform."
+msgstr ""
+"Τροποποιεί το HTML κάθε σελίδας frontend πριν από την αποστολή με πέντε "
+"σταθερούς κανόνες: γνώρισμα lang, σύνδεσμος παράκαμψης προς την κύρια "
+"περιοχή, γνώρισμα alt σε εικόνες, aria-label σε πεδία φόρμας χωρίς ετικέτα "
+"και ονόματα για πολλαπλές πλοηγήσεις. Δεν ελέγχει την προσβασιμότητα και δεν "
+"καθιστά τον ιστότοπο συμβατό με το BFSG."
+
+#. Author of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-bfsg-ast-remediator.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:77
+msgid "Sprache des Dokuments"
+msgstr "Γλώσσα εγγράφου"
+
+#: includes/Admin/AdminDashboard.php:78
+msgid ""
+"Setzt lang am <html>-Element aus der Spracheinstellung von WordPress, wenn "
+"es fehlt oder leer ist. Läuft immer."
+msgstr ""
+"Ορίζει το lang στο στοιχείο <html> από τη ρύθμιση γλώσσας του WordPress όταν "
+"λείπει ή είναι κενό. Εκτελείται πάντα."
+
+#: includes/Admin/AdminDashboard.php:81
+msgid "Sprunglink zum Hauptbereich"
+msgstr "Σύνδεσμος παράκαμψης προς το κύριο περιεχόμενο"
+
+#: includes/Admin/AdminDashboard.php:82
+msgid ""
+"Wenn die Seite ein <main> (oder role=\"main\") und keinen eigenen Sprunglink "
+"hat: fügt am Anfang von <body> „Zum Inhalt springen“ ein, das erst bei Fokus "
+"sichtbar wird und auf die id des Hauptbereichs zeigt (fehlt sie, wird main-"
+"content gesetzt)."
+msgstr ""
+"Όταν η σελίδα διαθέτει <main> (ή role=\"main\") και κανέναν δικό της "
+"σύνδεσμο παράκαμψης: εισάγει στην αρχή του <body> το «Zum Inhalt springen», "
+"ορατό κατά την εστίαση και συνδεδεμένο με το id της κύριας περιοχής (ορίζει "
+"main-content αν λείπει)."
+
+#: includes/Admin/AdminDashboard.php:85
+msgid "alt-Attribut für Bilder"
+msgstr "Γνώρισμα alt για εικόνες"
+
+#: includes/Admin/AdminDashboard.php:86
+msgid ""
+"Gibt jedem img-Element ohne alt ein alt: leer, wenn der Dateipfad icon oder "
+"decor enthält, sonst den Dateinamen ohne Endung. Ein Dateiname ist keine "
+"Bildbeschreibung."
+msgstr ""
+"Δίνει σε κάθε img-Element χωρίς alt ένα γνώρισμα alt: κενό αν η διαδρομή "
+"περιέχει icon ή decor, διαφορετικά το όνομα αρχείου χωρίς επέκταση. Το όνομα "
+"αρχείου δεν αποτελεί περιγραφή εικόνας."
+
+#: includes/Admin/AdminDashboard.php:89
+msgid "aria-label für unbeschriftete Formularfelder"
+msgstr "aria-label για πεδία φόρμας χωρίς ετικέτα"
+
+#: includes/Admin/AdminDashboard.php:90
+msgid ""
+"Feldern ohne label, aria-label, aria-labelledby oder title gibt es aria-"
+"label aus placeholder, sonst aus name, sonst „Eingabefeld“. Felder innerhalb "
+"eines <label> bleiben unverändert."
+msgstr ""
+"Στα πεδία χωρίς label, aria-label, aria-labelledby ή title δίνει aria-label "
+"από το placeholder, αλλιώς από το name, αλλιώς «Eingabefeld». Τα πεδία εντός "
+"<label> παραμένουν αμετάβλητα."
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Namen für mehrere Navigationen"
+msgstr "Ονόματα για πολλαπλές πλοηγήσεις"
+
+#: includes/Admin/AdminDashboard.php:94
+msgid ""
+"Bei mehr als einem <nav> ohne Namen: aria-label nach der CSS-Klasse "
+"(Hauptnavigation, Fußzeilennavigation, Mobilmenü) oder „Navigation 1, 2 …“."
+msgstr ""
+"Όταν υπάρχουν περισσότερα από ένα <nav> χωρίς όνομα: ορίζει aria-label βάσει "
+"της κλάσης CSS (Hauptnavigation, Fußzeilennavigation, Mobilmenü) ή "
+"«Navigation 1, 2 …»."
+
+#: includes/Admin/AdminDashboard.php:138
+msgid "Regeln laufen nicht: PHP-Erweiterung dom oder mbstring fehlt"
+msgstr "Οι κανόνες δεν εκτελούνται: λείπει η επέκταση PHP dom ή mbstring"
+
+#: includes/Admin/AdminDashboard.php:140
+msgid "Regeln ändern das HTML der Frontend-Seiten"
+msgstr "Οι κανόνες τροποποιούν το HTML των σελίδων frontend"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "Ausgeschaltet: das Frontend bleibt unverändert"
+msgstr "Απενεργοποιημένο: το frontend παραμένει αμετάβλητο"
+
+#: includes/Admin/AdminDashboard.php:152
+msgid "Regeln eingeschaltet"
+msgstr "Ενεργοί κανόνες"
+
+#: includes/Admin/AdminDashboard.php:158
+msgid "Einstellungen und Simulator"
+msgstr "Ρυθμίσεις και προσομοιωτής"
+
+#: includes/Admin/AdminDashboard.php:177
+msgid "WM BFSG Remediator"
+msgstr "WM BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:178
+msgid "BFSG Remediator"
+msgstr "BFSG Remediator"
+
+#: includes/Admin/AdminDashboard.php:239
+msgid "Übersicht"
+msgstr "Επισκόπηση"
+
+#: includes/Admin/AdminDashboard.php:240 includes/Admin/AdminDashboard.php:310
+msgid "Simulator"
+msgstr "Προσομοιωτής"
+
+#: includes/Admin/AdminDashboard.php:241 includes/Admin/AdminDashboard.php:370
+msgid "Regeln"
+msgstr "Κανόνες"
+
+#: includes/Admin/AdminDashboard.php:242
+msgid "Was es nicht tut"
+msgstr "Τι δεν κάνει"
+
+#: includes/Admin/AdminDashboard.php:249
+msgid ""
+"Ändert das HTML jeder Frontend-Seite vor der Auslieferung mit fünf festen "
+"Regeln. Es prüft nicht, ob eine Seite barrierefrei ist, und macht keine "
+"Website BFSG-konform."
+msgstr ""
+"Τροποποιεί το HTML κάθε σελίδας frontend πριν από την παράδοση με πέντε "
+"σταθερούς κανόνες. Δεν ελέγχει αν μια σελίδα είναι προσβάσιμη και δεν "
+"καθιστά κανέναν ιστότοπο συμβατό με το BFSG."
+
+#: includes/Admin/AdminDashboard.php:252
+msgid "Part of the WM Suite plugin family"
+msgstr "Μέρος της οικογένειας προσθέτων WM Suite"
+
+#: includes/Admin/AdminDashboard.php:254
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:255
+msgid "Standalone"
+msgstr "Αυτόνομο"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Eingeschaltet"
+msgstr "Ενεργό"
+
+#: includes/Admin/AdminDashboard.php:258
+msgid "Läuft nicht"
+msgstr "Δεν εκτελείται"
+
+#: includes/Admin/AdminDashboard.php:265
+msgid "Einstellungen gespeichert. Sie gelten ab dem nächsten Seitenaufruf."
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν. Ισχύουν από την επόμενη φόρτωση σελίδας."
+
+#: includes/Admin/AdminDashboard.php:268
+msgid "Bereiche"
+msgstr "Ενότητες"
+
+#: includes/Admin/AdminDashboard.php:276
+msgid "Was gerade läuft"
+msgstr "Τι εκτελείται αυτή τη στιγμή"
+
+#: includes/Admin/AdminDashboard.php:277
+msgid ""
+"Gelesen aus den gespeicherten Einstellungen beim Aufruf dieser Seite. Das "
+"Plugin führt keine Statistik darüber, wie oft eine Regel etwas geändert hat."
+msgstr ""
+"Αναγνώστηκε από τις αποθηκευμένες ρυθμίσεις κατά το άνοιγμα αυτής της "
+"σελίδας. Το πρόσθετο δεν τηρεί στατιστικά για το πόσο συχνά ένας κανόνας "
+"άλλαξε κάτι."
+
+#: includes/Admin/AdminDashboard.php:281
+msgid "Baustein"
+msgstr "Στοιχείο"
+
+#: includes/Admin/AdminDashboard.php:282
+msgid "Zustand"
+msgstr "Κατάσταση"
+
+#: includes/Admin/AdminDashboard.php:283
+msgid "Was er tut"
+msgstr "Λειτουργία"
+
+#: includes/Admin/AdminDashboard.php:288
+msgid "Engine"
+msgstr "Μηχανή"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "an"
+msgstr "ενεργό"
+
+#: includes/Admin/AdminDashboard.php:289 includes/Admin/AdminDashboard.php:300
+msgid "aus"
+msgstr "ανενεργό"
+
+#: includes/Admin/AdminDashboard.php:290
+msgid ""
+"Puffert die Ausgabe jeder Frontend-Seite (nicht Admin, AJAX, Cron, REST) ab "
+"template_redirect und wendet die eingeschalteten Regeln auf Dokumente mit "
+"<html> an."
+msgstr ""
+"Αποθηκεύει προσωρινά την έξοδο κάθε σελίδας frontend (όχι διαχείριση, AJAX, "
+"cron ή REST) στο template_redirect και εφαρμόζει τους ενεργούς κανόνες σε "
+"έγγραφα με <html>."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "PHP dom und mbstring"
+msgstr "PHP dom και mbstring"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "vorhanden"
+msgstr "διαθέσιμα"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "fehlt"
+msgstr "λείπουν"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid ""
+"Ohne diese Erweiterungen laufen die Regeln nicht und die Seiten bleiben "
+"unverändert."
+msgstr ""
+"Χωρίς αυτές τις επεκτάσεις οι κανόνες δεν εκτελούνται και οι σελίδες "
+"παραμένουν αμετάβλητες."
+
+#: includes/Admin/AdminDashboard.php:311
+msgid ""
+"Führt dieselbe Engine mit denselben gespeicherten Regeln aus wie das "
+"Frontend. Nur vollständige Dokumente mit <html> werden verarbeitet."
+msgstr ""
+"Εκτελεί ακριβώς την ίδια μηχανή με τους ίδιους αποθηκευμένους κανόνες όπως "
+"το frontend. Επεξεργάζονται μόνο πλήρη έγγραφα με <html>."
+
+#: includes/Admin/AdminDashboard.php:314
+msgid "HTML-Dokument"
+msgstr "Έγγραφο HTML"
+
+#: includes/Admin/AdminDashboard.php:316
+msgid "Regeln anwenden"
+msgstr "Εφαρμογή κανόνων"
+
+#: includes/Admin/AdminDashboard.php:319
+msgid "Ergebnis"
+msgstr "Αποτέλεσμα"
+
+#: includes/Admin/AdminDashboard.php:334
+msgid "Wird verarbeitet …"
+msgstr "Επεξεργασία …"
+
+#: includes/Admin/AdminDashboard.php:345
+msgid "Die Anfrage ist fehlgeschlagen."
+msgstr "Το αίτημα απέτυχε."
+
+#: includes/Admin/AdminDashboard.php:350
+msgid "Regeln haben das Dokument geändert:"
+msgstr "κανόνες τροποποίησαν το έγγραφο:"
+
+#: includes/Admin/AdminDashboard.php:351
+msgid ""
+"Keine aktive Regel hat etwas geändert. Das ist keine Aussage über die "
+"Barrierefreiheit."
+msgstr ""
+"Κανένας ενεργός κανόνας δεν άλλαξε κάτι. Αυτό δεν αποτελεί δήλωση περί "
+"προσβασιμότητας."
+
+#: includes/Admin/AdminDashboard.php:361
+msgid "Verbindungsfehler."
+msgstr "Σφάλμα σύνδεσης."
+
+#: includes/Admin/AdminDashboard.php:377
+msgid "Engine einschalten"
+msgstr "Ενεργοποίηση μηχανής"
+
+#: includes/Admin/AdminDashboard.php:379
+msgid ""
+"Aus: keine Frontend-Seite wird verändert. Die Sprache des Dokuments hat "
+"keinen eigenen Schalter und läuft, solange die Engine an ist."
+msgstr ""
+"Ανενεργό: καμία σελίδα frontend δεν τροποποιείται. Η γλώσσα εγγράφου δεν "
+"έχει δικό της διακόπτη και εκτελείται όσο η μηχανή είναι ενεργή."
+
+#: includes/Admin/AdminDashboard.php:395
+msgid "Einstellungen beim Deinstallieren löschen"
+msgstr "Διαγραφή ρυθμίσεων κατά την απεγκατάσταση"
+
+#: includes/Admin/AdminDashboard.php:397
+msgid ""
+"Standardmäßig bleiben alle gespeicherten Optionen bei der Deinstallation "
+"erhalten. Nur wenn dieses Kontrollkästchen aktiviert ist, entfernt "
+"uninstall.php sämtliche Optionen des Plugins."
+msgstr ""
+"Από προεπιλογή όλες οι αποθηκευμένες επιλογές διατηρούνται κατά την "
+"απεγκατάσταση. Μόνο αν επιλεγεί αυτό το πλαίσιο, το uninstall.php αφαιρεί "
+"όλες τις επιλογές του προσθέτου."
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Einstellungen speichern"
+msgstr "Αποθήκευση ρυθμίσεων"
+
+#: includes/Admin/AdminDashboard.php:406
+msgid "Was das Plugin nicht tut"
+msgstr "Τι δεν κάνει το πρόσθετο"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid ""
+"Es prüft keine Seite auf Barrierefreiheit und erstellt keinen Bericht; ob "
+"eine Website BFSG, BITV 2.0 oder WCAG genügt, beantwortet es nicht."
+msgstr ""
+"Δεν ελέγχει καμία σελίδα για προσβασιμότητα και δεν δημιουργεί αναφορά· δεν "
+"απαντά στο αν ένας ιστότοπος πληροί τα BFSG, BITV 2.0 ή WCAG."
+
+#: includes/Admin/AdminDashboard.php:409
+msgid ""
+"Kontraste, Überschriftenhierarchie, Tastaturbedienung, Fokus, Schaltflächen- "
+"und Linktexte, Videos, PDFs und Inhalte, die per JavaScript nachgeladen "
+"werden, bleiben unberührt."
+msgstr ""
+"Αντιθέσεις χρωμάτων, ιεραρχία επικεφαλίδων, χρήση πληκτρολογίου, εστίαση, "
+"κείμενα κουμπιών και συνδέσμων, βίντεο, PDF και περιεχόμενο που φορτώνεται "
+"μέσω JavaScript μένουν ανέπαφα."
+
+#: includes/Admin/AdminDashboard.php:410
+msgid ""
+"Ein aus dem Dateinamen gebildeter alt-Text („IMG 2034“) und ein aria-label "
+"aus name oder placeholder sind Notbehelfe, keine Beschreibungen. Die "
+"eigentliche Korrektur gehört in Theme und Inhalt."
+msgstr ""
+"Ένα κείμενο alt από το όνομα αρχείου («IMG 2034») και ένα aria-label από το "
+"name ή το placeholder είναι προσωρινές λύσεις, όχι περιγραφές. Η ουσιαστική "
+"διόρθωση ανήκει στο θέμα και στο περιεχόμενο."
+
+#: includes/Admin/AdminDashboard.php:411
+msgid ""
+"Die Änderungen existieren nur im ausgelieferten HTML: Editor, Datenbank und "
+"Theme-Dateien bleiben wie sie sind, und Seiten aus einem Seiten-Cache "
+"bekommen sie nur, wenn der Cache nach dem Plugin gebaut wurde."
+msgstr ""
+"Οι αλλαγές υπάρχουν μόνο στο παραδιδόμενο HTML: ο επεξεργαστής, η βάση "
+"δεδομένων και τα αρχεία θέματος μένουν ως έχουν, και οι σελίδες από cache "
+"τις λαμβάνουν μόνο αν η cache δημιουργήθηκε μετά το πρόσθετο."
+
+#: wm-bfsg-ast-remediator.php:99
+msgid "HTML-Regeln inaktiv (PHP dom oder mbstring fehlt)"
+msgstr "Κανόνες HTML ανενεργοί (λείπει το PHP dom ή mbstring)"
+
+#: wm-bfsg-ast-remediator.php:102
+msgid "HTML-Regeln ausgeschaltet"
+msgstr "Κανόνες HTML απενεργοποιημένοι"
+
+#. translators: %1$d: number of enabled rules, %2$d: total number of rules
+#: wm-bfsg-ast-remediator.php:105
+#, php-format
+msgid "HTML-Regeln aktiv (%1$d/%2$d Regeln eingeschaltet)"
+msgstr "Κανόνες HTML ενεργοί (%1$d/%2$d κανόνες ενεργοί)"
+
+#: wm-bfsg-ast-remediator.php:125 wm-bfsg-ast-remediator.php:156
+msgid "WM BFSG Remediator Status"
+msgstr "Κατάσταση WM BFSG Remediator"
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

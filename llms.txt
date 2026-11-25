@@ -1,0 +1,27 @@
+# WM BFSG AST Remediator
+
+> WordPress plugin (`v1.1.2`) that buffers frontend pages and applies five fixed rules to the HTML before it is sent: a lang attribute, a skip link to the main landmark, alt attributes on images, aria-label on form controls without any name, and names for several navigations. It does not audit pages, keeps no statistics and makes no compliance assessment.
+
+## Overview
+
+
+- Engine: `WM_BFSG_DOM_Transformer::transform()` with `WM_BFSG_Rules_Engine`, one implementation for frontend, simulator, CLI and hub self-test
+- REST: `wm-bfsg/v1` — `POST /remediate-html` (administrators)
+- WP-CLI: `wp bfsg status`, `wp bfsg remediate <file> [--write]`
+- Hooks: `wm_bfsg_remediator_rules_config`, `wm_bfsg_remediator_html_output`, `wm_bfsg_remediator_ready`
+- Block Bindings & GenerateBlocks: `wm-bfsg-remediator/status` and `{{wm_bfsg_remediator_status}}`
+- Options: `wm_bfsg_remediator_enabled`, `wm_bfsg_fix_skip_links`, `wm_bfsg_fix_images`, `wm_bfsg_fix_labels`, `wm_bfsg_fix_aria`, `wm_bfsg_remediator_delete_data_on_uninstall`
+- Documentation measured against the code: README.md, DEVELOPERS.md, docs/ARCHITECTURE.md
+
+## Standards
+
+- Version 1.2.2.
+- PHP 8.1+ with ext-dom and ext-mbstring / strict types / WordPress coding style (tabs)
+- Self-hosted assets in `/assets/`; parser without network access (LIBXML_NONET)
+- Nonce & capability checks / late escaping / opt-in data removal on uninstall
+
+## Official Links
+
+- Plugin Page: https://arnoldwender.com/wordpress-plugins/wm-bfsg-ast-remediator/
+- GitHub Repository: https://github.com/arnoldwender/wm-wp-bfsg-ast-remediator
+- Support & Liability: Zero support — reproducible bugs on https://github.com/arnoldwender/wm-wp-bfsg-ast-remediator/issues only · no private support · AS IS / no liability (SUPPORT.md)
